@@ -15,6 +15,7 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **Validation**: Zod (`zod/v4`), `drizzle-zod`
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
+- **Mobile**: Expo + Expo Router
 
 ## Key Commands
 
@@ -23,5 +24,10 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from OpenAPI spec
 - `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
+- `pnpm --filter @workspace/mobile run dev` — run the Moroccan baccalaureate calculator mobile app
+
+## Artifacts
+
+- `artifacts/mobile` — Arabic RTL Expo mobile app for calculating the Moroccan baccalaureate average for the Sciences Physiques track. It is frontend-only and calculates regional exam, continuous assessment, national exam weighted average, and final pass/fail result locally.
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
